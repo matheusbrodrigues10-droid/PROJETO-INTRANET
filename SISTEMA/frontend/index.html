@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <h1>Fale Conosco</h1>
+
+    <form id="formContato">
+        <label>Nome completo:</label>
+        <input type="text" id="nome" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Telefone:</label>
+        <input type="text" id="telefone">
+
+        <label>Assunto:</label>
+        <input type="text" id="assunto">
+
+        <label>Mensagem:</label>
+        <textarea id="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resposta"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
