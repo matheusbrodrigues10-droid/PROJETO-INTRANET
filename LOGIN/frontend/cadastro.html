@@ -1,0 +1,72 @@
+<!-- PARA FUNCIONAR CORRETAMENTE A ABA DE CADASTRO NÃO INICIE ELA PELO LIVE SERVER, ACESSE http://localhost:3000/cadastro -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background-color: #f0f7ff;
+            font-family: Arial, sans-serif;
+            color: #003366;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 60, 140, 0.2);
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #0066cc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #004a99;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Cadastro</h2>
+        <form action="/cadastro" method="POST">
+            <input type="text" name="nome" placeholder="Nome completo" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="senha" placeholder="Senha" required><br>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <br>
+        <a href="/index.html">Voltar ao Login</a>
+    </div>
+
+</body>
+</html>
